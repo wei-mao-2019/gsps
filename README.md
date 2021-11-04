@@ -18,7 +18,7 @@ tested on pytorch == 1.8.1
 
 ### Datasets
 * We follow the data preprocessing steps ([DATASETS.md](https://github.com/facebookresearch/VideoPose3D/blob/master/DATASETS.md)) inside the [VideoPose3D](https://github.com/facebookresearch/VideoPose3D) repo.
-* Given the processed dataset, we further compute the multi-modal future for each motion sequence. All data needed can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1sb1n9l0Na5EqtapDVShOJJ-v6o-GZrIJ?usp=sharing) (or [BaiduYun](https://pan.baidu.com/s/1xytfSlkas60I01xvKHWfNQ), password: h4sa) and place all the dataset in ``data`` folder inside the root of this repo.
+* Given the processed dataset, we further compute the multi-modal future for each motion sequence. All data needed can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1sb1n9l0Na5EqtapDVShOJJ-v6o-GZrIJ?usp=sharing) and place all the dataset in ``data`` folder inside the root of this repo.
 
 ### Training and Evaluation
 * We provide 4 YAML configs inside ``motion_pred/cfg``: `[dataset].yml` and `[dataset]_nf.yml` for training generator and normalizing flow respectively. These configs correspond to pretrained models inside ``results``.
