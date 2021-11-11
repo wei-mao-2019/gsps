@@ -481,8 +481,8 @@ if __name__ == '__main__':
         models[algo].eval()
 
         LinNF.LinNF(data_dim=dataset.traj_dim, num_layer=3)
-        cp_path = './results_pretrained/h36m_linNF_pose_prior_float/models/vae_0025.p' if cfg.dataset == 'h36m' else \
-            './results_pretrained/humaneva_nf/models/vae_0025.p'
+        cp_path = './results/h36m_linNF_pose_prior_float/models/vae_0025.p' if cfg.dataset == 'h36m' else \
+            './results/humaneva_nf/models/vae_0025.p'
         print('loading model from checkpoint: %s' % cp_path)
         model_cp = pickle.load(open(cp_path, "rb"))
         pose_prior.load_state_dict(model_cp['model_dict'])
